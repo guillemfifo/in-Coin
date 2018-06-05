@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="32dp"
+            android:onClick="Menu"
+            android:src="@mipmap/icono_serveis" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:text="Serveis"
+            android:textColor="@android:color/background_light"
+            android:textSize="20dp"
+            android:textStyle="normal|bold|italic" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView_serveis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar2" />
+</RelativeLayout>
